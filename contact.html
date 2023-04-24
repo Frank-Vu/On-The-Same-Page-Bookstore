@@ -73,8 +73,6 @@
                                 <input type="tel" id="phone" name="phone" placeholder="+84 123 456 789" required
                                     minlength="10" maxlength="12">
                             </div>
-                        </div>
-                        <div class="input-row">
                             <div class="input-group">
                                 <label for="email">Email
                                     <span class="require">*</span>
@@ -82,16 +80,29 @@
                                 <input type="email" id="email" name="email" placeholder="Your@email.com" required>
                             </div>
                             <div class="input-group">
-                                <label for="subject">Subject
+                                <label>Contact Preference
                                     <span class="require">*</span>
                                 </label>
-                                <select id="subject" name="subjectist" form="subjectform" required>
+                                <div class="checkbox">
+                                    <label for="by-email">By Email
+                                        <span><input type="checkbox" id="by-email" name="by-email"
+                                                value="by-email"></span>
+                                    </label>
+                                    <label for="by-phone">By phone
+                                        <span><input type="checkbox" id="by-phone" name="by-phone"
+                                                value="by-phone"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="input-group">
+                                <label for="purpose">Purpose
+                                    <span class="require">*</span>
+                                </label>
+                                <select id="purpose" name="purposelist" form="purposeform" required>
                                     <option value="">--Please choose an option--</option>
-                                    <option value="Order status">Order status</option>
-                                    <option value="Feedback">Feedback</option>
-                                    <option value="Book request">Book request</option>
-                                    <option value="Report a bug">Report a bug</option>
-                                    <option value="Other">Other</option>
+                                    <option value="I want to sell books">I want to sell books</option>
+                                    <option value="I want to buy books">I want to buy books</option>
                                 </select>
                             </div>
                         </div>
