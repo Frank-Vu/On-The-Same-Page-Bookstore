@@ -1,0 +1,162 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Thanh Tung
+  ID: s3963172
+  Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - On The Same Page Bookstore</title>
+    <link rel="shortcut icon" type="image/png" href="img/Logo/Logo-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="header-section">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/Logo/Logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+        <div class="mobile-nav-icon">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li>
+                    <a href="fiction.html" class="nav-link">fiction</a>
+                </li>
+                <li>
+                    <a href="non-fiction.html" class="nav-link">non-fiction</a>
+                </li>
+                <li>
+                    <a href="textbook.html" class="nav-link">textbook</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="return-button">
+                <a href="index.html" class="return-link">⬅
+                    <span>Back To Store</span>
+                </a>
+            </div>
+            <h1>Connect With Us</h1>
+            <p>We would love to respond to your queries and help you secceed.<br>Feel free to get in touch with us.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Sent your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name
+                                    <span class="require">*</span>
+                                </label>
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Phone
+                                    <span class="require">*</span>
+                                </label>
+                                <input type="tel" placeholder="+84 123 456 789" required minlength="10" maxlength="12">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email
+                                    <span class="require">*</span>
+                                </label>
+                                <input type="email" placeholder="Your@email.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="subject">Subject
+                                    <span class="require">*</span>
+                                </label>
+                                <select name="subject" id="subject" required>
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="">Order status</option>
+                                    <option value="">Feedback</option>
+                                    <option value="">Book request</option>
+                                    <option value="">Report a bug</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label>Message
+                            <span class="require">*</span>
+                        </label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table class="contact-info">
+                        <tr>
+                            <td>Email</td>
+                            <td>onthesamepage@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>(84) 907 165 234</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>26 Highway 13, Ward 26, Binh Thanh District,<br>Ho Chi Minh City, Vietnam</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer-section">
+        <nav id="footer-navbar">
+            <div class="video-box">
+                <h2>Recommended Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lIW5jBrrsS0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="newsletter-box">
+                <form>
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <ul id="footer-menu">
+                <li>
+                    <a href="#" class="footer-link">about us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">privacy policy</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">terms</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">copyright</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

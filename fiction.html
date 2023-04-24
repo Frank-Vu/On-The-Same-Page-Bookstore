@@ -1,0 +1,169 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Thanh Tung
+  ID: s3963172
+  Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiction - On The Same Page Bookstore</title>
+    <link rel="shortcut icon" type="image/png" href="img/Logo/Logo-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="header-section">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/Logo/Logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+        <div class="mobile-nav-icon">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li>
+                    <a href="fiction.html" class="nav-link" id="active-link">fiction</a>
+                </li>
+                <li>
+                    <a href="non-fiction.html" class="nav-link">non-fiction</a>
+                </li>
+                <li>
+                    <a href="textbook.html" class="nav-link">textbook</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="store-page">
+        <div id="breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="index.html">home</a></li>
+                <li>fiction</li>
+            </ul>
+        </div>
+        <div>
+            <section>
+                <a class="category">
+                    <h1>fantasy</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Fantasy/A Wrinkle in Time/A Wrinkle in Time-Cover.jpg" alt="A Wrinkle in Time" class="book-img">
+                        <h2>A Wrinkle in Time</h2>
+                        <h3>by Madeleine L'engle</h3>
+                        <p>$8.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Fantasy/The Chronicles of Narnia_The Lion, the Witch and the Wardrobe/TCON_The Lion, the Witch and the Wardrobe-Cover.jpg" alt="The Chronicles of Narnia: The Lion, the Witch and the Wardrobe">
+                        <h2>The Chronicles of Narnia:<br>The Lion, the Witch and the Wardrobe</h2>
+                        <h3>by C. S. Lewis</h3>
+                        <p>$8.99 USD</p>
+                    </a>
+                    <a class="book" href="book-detail.html">
+                        <img src="img/Book/Fiction/Fantasy/The Lord of the Rings_The Fellowship of the Ring/TLOTR_The Fellowship of the Ring-Cover.jpg" alt="The Lord of the Rings: The Fellowship of the Ring">
+                        <h2>The Lord of the Rings:<br>The Fellowship of the Ring</h2>
+                        <h3>by J.R.R. Tolkien</h3>
+                        <p>$17.99 USD</p>
+                    </a>
+            </section>
+            <section>
+                <a class="category">
+                    <h1>horror</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Horror/Mothered/Mothered-Cover.jpg" alt="Mothered">
+                        <h2>Mothered</h2>
+                        <h3>by Zoje Stage</h3>
+                        <p>$16.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Horror/Piñata/Piñata-Cover.jpg" alt="Piñata">
+                        <h2>Piñata</h2>
+                        <h3>by Leopoldo Gout</h3>
+                        <p>$28.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Horror/Welcome To Nightmare Island/Welcome to Nightmare Island-Cover.jpg" alt="Welcome To Nightmare Island">
+                        <h2>Welcome To Nightmare Island</h2>
+                        <h3>by Devin Cabrera</h3>
+                        <p>$24.99 USD</p>
+                    </a>
+            </section>
+            <section>
+                <a class="category">
+                    <h1>mystery - thriller</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Mystery-Thriller/Missing Clarissa/Missing Clarissa-Cover.jpg" alt="Missing Clarissa">
+                        <h2>Missing Clarissa</h2>
+                        <h3>by Ripley Jones</h3>
+                        <p>$18.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Mystery-Thriller/The Golden Spoon/The Golden Spoon-Cover.jpg" alt="The Golden Spoon">
+                        <h2>The Golden Spoon</h2>
+                        <h3>by Jessa Maxwell</h3>
+                        <p>$26.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Mystery-Thriller/The House in the Pines_A Novel/The House in the Pines_A Novel-Cover.jpg" alt="The House in the Pines">
+                        <h2>The House in the Pines</h2>
+                        <h3>by Ana Reyes</h3>
+                        <p>$26.99 USD</p>
+                    </a>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer-section">
+        <nav id="footer-navbar">
+            <div class="video-box">
+                <h2>Recommended Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lIW5jBrrsS0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="newsletter-box">
+                <form>
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <ul id="footer-menu">
+                <li>
+                    <a href="#" class="footer-link">about us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">privacy policy</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">terms</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">copyright</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

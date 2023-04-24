@@ -1,0 +1,177 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Thanh Tung
+  ID: s3963172
+  Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbook - On The Same Page Bookstore</title>
+    <link rel="shortcut icon" type="image/png" href="img/Logo/Logo-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="header-section">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/Logo/Logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+        <div class="mobile-nav-icon">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li>
+                    <a href="fiction.html" class="nav-link">fiction</a>
+                </li>
+                <li>
+                    <a href="non-fiction.html" class="nav-link">non-fiction</a>
+                </li>
+                <li>
+                    <a href="textbook.html" class="nav-link" id="active-link">textbook</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="index.html">home</a></li>
+                <li>textbook</li>
+            </ul>
+        </div>
+        <div id="store-page">
+            <section>
+                <a class="category">
+                    <h1>humanities</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Humanities/21 Lessons for the 21st Century/21 Lessons for the 21st Century-Cover.jpg"
+                            alt="21 Lessons for the 21st Century">
+                        <h2>21 Lessons for the 21st Century</h2>
+                        <h3>by Yuval Noah Harari</h3>
+                        <p>$20.00 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Humanities/Guns, Germs, and Steel_The Fates of Human Societies/Guns, Germs, and Steel-Cover.jpg"
+                            alt="Guns, Germs, and Steel: The Fates of Human Societies">
+                        <h2>Guns, Germs, and Steel:<br>The Fates of Human Societies</h2>
+                        <h3>by Jared Diamond Ph.D</h3>
+                        <p>$19.95 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Humanities/The Art of War/The Art of War-Cover.jpg"
+                            alt="The Art of War">
+                        <h2>The Art of War</h2>
+                        <h3>by Sun Tzu</h3>
+                        <p>$4.99 USD</p>
+                    </a>
+            </section>
+            <section>
+                <a class="category">
+                    <h1>math and science</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Math and Science/Astrophysics for People in a Hurry/Astrophysics for People in a Hurry-Cover.jpg"
+                            alt="Astrophysics for People in a Hurry">
+                        <h2>Astrophysics for People in a Hurry</h2>
+                        <h3>by Neil deGrasse Tyson</h3>
+                        <p>$18.95 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Math and Science/Cosmos/Cosmos-Cover.jpg" alt="Cosmos">
+                        <h2>Cosmos</h2>
+                        <h3>by Carl Sagan</h3>
+                        <p>$18.00 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Math and Science/Fermat's Enigma_The Epic Quest to Solve the World's Greatest Mathematical Problem/Fermat's Enigma-Cover.jpg"
+                            alt="Fermat's Enigma: the Epic Quest to Solve the World's Greatest Mathematical Problem">
+                        <h2>Fermat's Enigma: The Epic Quest to Solve<br>the World's Greatest Mathematical Problem</h2>
+                        <h3>by Simon Singh</h3>
+                        <p>$18.00 USD</p>
+                    </a>
+            </section>
+            <section>
+                <a class="category">
+                    <h1>professional and technical</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Professional and Technical/System Design Interview/System Design Interview-Cover.jpg"
+                            alt="System Design Interview">
+                        <h2>System Design Interview</h2>
+                        <h3>by Alex Xu</h3>
+                        <p>$39.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Professional and Technical/The Brain from Inside Out/The Brain from Inside Out-Cover.jpg"
+                            alt="The Brain from Inside Out">
+                        <h2>The Brain from Inside Out</h2>
+                        <h3>by Gyorgy Buzsaki</h3>
+                        <p>$32.95 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Professional and Technical/Thinking, Fast and Slow/Thinking, Fast and Slow-Cover.jpg"
+                            alt="Thinking, Fast and Slow">
+                        <h2>Thinking, Fast and Slow</h2>
+                        <h3>by Daniel Kahneman</h3>
+                        <p>$20.00 USD</p>
+                    </a>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer-section">
+        <nav id="footer-navbar">
+            <div class="video-box">
+                <h2>Recommended Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lIW5jBrrsS0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="newsletter-box">
+                <form>
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <ul id="footer-menu">
+                <li>
+                    <a href="#" class="footer-link">about us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">privacy policy</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">terms</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">copyright</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

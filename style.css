@@ -1,0 +1,681 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Thanh Tung
+  ID: s3963172
+  Acknowledgement:
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+
+    --header-bg-color-light: gray;
+    --main-bg-color-light: #eee;
+    --font-color-light: black;
+
+    --breadcrumb-parent-color: black;
+    --breadcrumb-child-color: gray;
+
+    --book-border-color: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg-color-light);
+}
+
+/* || HEADER SECTION */
+.header-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;    
+}
+
+/* Header Logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+#logo {
+    width: 75px;
+    height: auto;
+    transition: .5s;
+}
+
+#logo:hover {
+    scale: 1.02;
+    transition: .5s;
+}
+
+/* Default Horizontal Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color-light);
+    height: 100px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    font-size: 30px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-right: 40px;
+    transition: .5s;
+}
+
+.navbar a {
+    color: var(--font-color-light);
+    text-decoration: none;
+}
+
+#active-link {
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar li:hover {
+    font-size: 31px;
+    transition: .5s;
+}
+
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: var(--book-border-color);
+    display: none;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* Responsive Vertical Navigation Bar */
+@media (max-width: 960px) {
+    .header-section {
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        padding-bottom: 30px;
+    }
+
+    .header-logo {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        margin-left: 50px;
+        padding-right: 50px;
+    }
+
+    .navbar {
+        background: var(--book-border-color);
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: fit-content;
+        padding: 5px 20px;
+        margin-left: 30px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+        transition: .5s;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    .mobile-nav-icon:hover+.navbar {
+        display: block;
+    }
+
+    .navbar:hover {
+        display: block;
+    }
+
+    .navbar li:hover {
+        font-size: 21px;
+        transition: .5s;
+    }
+}
+
+/* || MAIN SECTION */
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.breadcrumb li {
+    color: var(--breadcrumb-child-color);
+    display: inline;
+    font-size: 25px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--breadcrumb-parent-color);
+    content: ">\00a0";
+}
+
+.breadcrumb li a {
+    color: var(--breadcrumb-parent-color);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.breadcrumb li a:hover {
+    color: var(--breadcrumb-parent-color);
+    text-decoration: underline;
+}
+
+/* Banner Section */
+#banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px 0 35px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    border: 3px solid black;
+}
+
+/* Store Section */
+#store-page {
+    padding-top: 50px;
+}
+
+.category {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: var(--font-color-light);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Book Showcase */
+/* Default 3 Column Layout */
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book {
+    width: calc(30% - 40px);
+    margin-bottom: 40px;
+    color: var(--font-color-light);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.book img {
+    width: 100%;
+    height: auto;
+    transition: .5s;
+    border: 10px solid var(--book-border-color);
+    z-index: -1;
+}
+
+.book h2 {
+    font-family: var(--font-family);
+    font-size: 24px;
+    color: var(--font-color-light);
+    margin: 20px 0 0;
+}
+
+.book h3 {
+    color: var(--font-color-light);
+    font-family: var(--font-family);
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.book p {
+    font-family: var(--font-family);
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.book:hover img {
+    scale: 1.02;
+    transition: 0.5s;
+}
+
+.book:hover h2 {
+    text-decoration: underline;
+}
+
+/* Responsive 1 Column Layout */
+@media only screen and (max-width: 960px) {
+    .bookshelf {
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+
+    .book {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #footer-navbar {
+        display: grid;
+        gap: 2%;
+    }
+
+    #footer-navbar>ul {
+        text-align: center;
+    }
+}
+
+/* || BOOK DEATAIL PAGE */
+/* Default Horizontal Book Detail */
+.detail-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.book-detail-smallimg img {
+    height: 150px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.6;
+}
+
+.book-detail-smallimg img:hover {
+    opacity: 1;
+}
+
+.book-detail {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+}
+
+.img-container img {
+    height: 500px;
+    width: auto;
+}
+
+.book-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-right: 80px;
+}
+
+.book-price h2 {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--font-color-light);
+}
+
+.book-price h3 {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--font-color-light);
+}
+
+.book-price p {
+    font-family: var(--font-family);
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--font-color-light);
+}
+
+.book-price button {
+    font-size: 25px;
+    font-weight: 900;
+    width: 250px;
+    height: 45px;
+}
+
+.description-box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 250px 60px 250px;
+}
+
+.description-box h2 {
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--font-color-light);
+}
+
+.description-box p {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--font-color-light);
+    text-align: justify;
+}
+
+/* Responsive Vertial Book Detail */
+@media (max-width:960px) {
+    .detail-box {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .book-detail {
+        padding: 10px;
+    }
+
+    .book-price {
+        padding: 10px;
+        margin-left: 80px;
+    }
+
+    .description-box {
+        text-align: center;
+        padding: 30px 100px 60px 100px;
+    }
+}
+
+/* || CONTACT PAGE */
+/* Back Button */
+.return-button {
+    display: flex;
+    font-size: 30px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 1px;
+}
+
+.return-button a {
+    color: var(--font-color-light);
+    text-decoration: none;
+}
+
+.return-button a span {
+    text-transform: uppercase;
+}
+
+.return-button .return-link:hover {
+    text-decoration: underline;
+}
+
+/* Default Horizontal Contact Form */
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.container h1 {
+    color: var(--font-color-light);
+    font-size: 24px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.container p {
+    color: var(--font-color-light);
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.contact-box {
+    background: var(--book-border-color);
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-left h3 {
+    color: var(--font-color-light);
+    font-family: var(--font-family);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+label {
+    color: var(--font-color-light);
+    font-family: var(--font-family);
+    margin-bottom: 6px;
+    display: block;
+}
+
+.require {
+    display: inline-block;
+    margin-left: 4px;
+    color: #f24f66
+}
+
+input,
+select,
+option {
+    color: var(--font-color-light);
+    font-family: var(--font-family);
+    width: 100%;
+    background: var(--book-border-color);
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    background: var(--book-border-color);
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+
+button {
+    background: orangered;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px 0 rgba(255, 69, 0, 0.3);
+}
+
+.contact-right {
+    background: orangered;
+    flex-basis: 40%;
+    padding: 40px;
+}
+
+.contact-right>h3 {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+.contact-info>tr,
+td:first-child {
+    padding-right: 20px;
+}
+
+.contact-info>tr,
+td {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+/* Responsive Vertical Contact Form */
+@media (max-width: 960px) {
+    .contact-box {
+        flex-direction: column;
+    }
+}
+
+/* || FOOTER SECTION */
+/* | Default Horizontal Footer */
+#footer-section {
+    border-top: 1px solid #d1d1d1;
+    /* split border */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#footer-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 2vw;
+    gap: 10%;
+}
+
+/* Video Section */
+.video-box iframe {
+    padding-bottom: 20px;
+}
+
+.video-box h2 {
+    font-size: 25px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    text-align: center;
+}
+
+/* Newsletter Section */
+.newsletter-box form {
+    display: grid;
+    justify-content: space-around;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.newsletter-box label {
+    color: var(--font-color-light);
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.newsletter-box input {
+    color: var(--font-color-light);
+    font-family: var(--font-family);
+    width: 100%;
+    background: var(--main-bg-color-light);
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+/* Footer Links Section */
+#footer-navbar ul {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.footer-link {
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: var(--font-color-light);
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* | Responsive Vertical Footer */
+@media (max-width: 960px) {
+    #footer-navbar {
+        display: grid;
+    }
+}

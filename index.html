@@ -1,0 +1,179 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Thanh Tung
+  ID: s3963172
+  Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On The Same Page Bookstore</title>
+    <link rel="shortcut icon" type="image/png" href="img/Logo/Logo-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/Logo/Logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+        <div class="mobile-nav-icon">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link" id="active-link">home</a>
+                </li>
+                <li>
+                    <a href="fiction.html" class="nav-link">fiction</a>
+                </li>
+                <li>
+                    <a href="non-fiction.html" class="nav-link">non-fiction</a>
+                </li>
+                <li>
+                    <a href="textbook.html" class="nav-link">textbook</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner-section">
+            <div class="banner">
+                <img src="img/Banner/Banner1.jpg" alt="banner">
+            </div>
+        </section>
+
+        <section id="store-page">
+            <section>
+                <a href="fiction.html" class="category">
+                    <h1>fiction</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="book-detail.html">
+                        <img src="img/Book/Fiction/Fantasy/The Lord of the Rings_The Fellowship of the Ring/TLOTR_The Fellowship of the Ring-Cover.jpg"
+                            alt="The Lord of the Rings: The Fellowship of the Ring">
+                        <h2>The Lord of the Rings:<br>The Fellowship of the Ring</h2>
+                        <h3>by J.R.R. Tolkien</h3>
+                        <p>$17.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Horror/Piñata/Piñata-Cover.jpg" alt="Piñata">
+                        <h2>Piñata</h2>
+                        <h3>by Leopoldo Gout</h3>
+                        <p>$28.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Fiction/Mystery-Thriller/The Golden Spoon/The Golden Spoon-Cover.jpg"
+                            alt="The Golden Spoon">
+                        <h2>The Golden Spoon</h2>
+                        <h3>by Jessa Maxwell</h3>
+                        <p>$26.99 USD</p>
+                    </a>
+            </section>
+
+            <section>
+                <a href="non-fiction.html" class="category">
+                    <h1>non-fiction</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="#">
+                        <img src="img/Book/Non-Fiction/Art and Photography/Finding Home_Shelter Dogs and Their Stories/Finding Home_Shelter Dogs and Their Stories-Cover.jpg"
+                            alt="Finding Home: Shelter Dogs and Their Stories">
+                        <h2>Finding Home: Shelter Dogs and Their Stories</h2>
+                        <h3>by Traer Scott</h3>
+                        <p>$19.95 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Non-Fiction/Cooking and Food/Joshua Weissman_An Unapologetic Cookbook/Joshua Weissman_An Unapologetic Cookbook-Cover.jpg"
+                            alt="Joshua Weissman: An Unapologetic Cookbook">
+                        <h2>Joshua Weissman: An Unapologetic Cookbook</h2>
+                        <h3>by Joshua Weissman</h3>
+                        <p>$30.00 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Non-Fiction/History/How We Got to Now Six_Innovations That Made the Modern World/How We Got to Now-Cover.jpg"
+                            alt="How We Got to Now Six: Innovations That Made the Modern World">
+                        <h2>How We Got to Now Six:<br>Innovations That Made the Modern World</h2>
+                        <h3>by Steven Johnson</h3>
+                        <p>$19.00 USD</p>
+                    </a>
+            </section>
+
+            <section>
+                <a href="textbook.html" class="category">
+                    <h1>textbook</h1>
+                </a>
+                <div class="bookshelf">
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Humanities/The Art of War/The Art of War-Cover.jpg"
+                            alt="The Art of War">
+                        <h2>The Art of War</h2>
+                        <h3>by Sun Tzu</h3>
+                        <p>$4.99 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Math and Science/Fermat's Enigma_The Epic Quest to Solve the World's Greatest Mathematical Problem/Fermat's Enigma-Cover.jpg"
+                            alt="Fermat's Enigma: The Epic Quest to Solve the World's Greatest Mathematical Problem">
+                        <h2>Fermat's Enigma: The Epic Quest to Solve<br>the World's Greatest Mathematical Problem</h2>
+                        <h3>by Simon Singh</h3>
+                        <p>$18.00 USD</p>
+                    </a>
+                    <a class="book" href="#">
+                        <img src="img/Book/Textbook/Professional and Technical/System Design Interview/System Design Interview-Cover.jpg"
+                            alt="System Design Interview">
+                        <h2>System Design Interview</h2>
+                        <h3>by Alex Xu</h3>
+                        <p>$39.99 USD</p>
+                    </a>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer-section">
+        <nav id="footer-navbar">
+            <div class="video-box">
+                <h2>Recommended Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lIW5jBrrsS0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="newsletter-box">
+                <form>
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <ul id="footer-menu">
+                <li>
+                    <a href="#" class="footer-link">about us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">privacy policy</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">terms</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">copyright</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

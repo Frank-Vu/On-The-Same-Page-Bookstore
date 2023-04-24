@@ -1,0 +1,137 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Thanh Tung
+  ID: s3963172
+  Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lord of the Rings: The Fellowship of the Ring - On The Same Page Bookstore</title>
+    <link rel="shortcut icon" type="image/png" href="img/Logo/Logo-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/Logo/Logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+        <div class="mobile-nav-icon">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link" id="active-link">home</a>
+                </li>
+                <li>
+                    <a href="fiction.html" class="nav-link">fiction</a>
+                </li>
+                <li>
+                    <a href="non-fiction.html" class="nav-link">non-fiction</a>
+                </li>
+                <li>
+                    <a href="textbook.html" class="nav-link">textbook</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="index.html">home</a></li>
+                <li><a href="fiction.html">fiction</a></li>
+                <li>TLotR: The Fellowship of the Ring</li>
+            </ul>
+        </div>
+
+        <div class="detail-box">
+            <div class="book-detail">
+                <div class="img-container">
+                    <img id="img-box"
+                        src="img/Book/Fiction/Fantasy/The Lord of the Rings_The Fellowship of the Ring/TLOTR_The Fellowship of the Ring-Cover.jpg"
+                        alt="TLOTR_The Fellowship of the Ring-Cover">
+                </div>
+                <div class="book-detail-smallimg">
+                    <img src="img/Book/Fiction/Fantasy/The Lord of the Rings_The Fellowship of the Ring/TLOTR_The Fellowship of the Ring-Cover.jpg"
+                        alt="TLOTR_The Fellowship of the Ring-Cover" onclick="myFunction(this)">
+                    <img src="img/Book/Fiction/Fantasy/The Lord of the Rings_The Fellowship of the Ring/TLOTR_The Fellowship of the Ring-Preview1.jpg"
+                        alt="TLOTR_The Fellowship of the Ring-Preview1" onclick="myFunction(this)">
+                    <img src="img/Book/Fiction/Fantasy/The Lord of the Rings_The Fellowship of the Ring/TLOTR_The Fellowship of the Ring-Preview2.jpg"
+                        alt="TLOTR_The Fellowship of the Ring-Preview2" onclick="myFunction(this)">
+                </div>
+            </div>
+            <div class="book-price">
+                <h2>The Lord of the Rings: The Fellowship of the Ring</h2>
+                <h3>by J.R.R. Tolkien</h3>
+                <p>$17.99 USD</p>
+                <button type="submit">Buy Now</button>
+                <button type="button">Add To Whislist</button>
+            </div>
+        </div>
+        <div class="description-box">
+            <h2>Book Description</h2>
+            <p>
+                <i>One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind
+                them.</i>
+            </p>
+            <p>
+                In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged
+                the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken
+                from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it
+                fell into the hands of Bilbo Baggins, as told in The Hobbit. In a sleepy village in the Shire, young
+                Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to
+                his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of
+                Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.
+            </p>
+        </div>
+    </main>
+
+    <footer id="footer-section">
+        <nav id="footer-navbar">
+            <div class="video-box">
+                <h2>Recommended Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lIW5jBrrsS0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="newsletter-box">
+                <form>
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <ul id="footer-menu">
+                <li>
+                    <a href="#" class="footer-link">about us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">privacy policy</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">terms</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">copyright</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
