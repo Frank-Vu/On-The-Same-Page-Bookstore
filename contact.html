@@ -58,46 +58,47 @@
             <div class="contact-box">
                 <div class="contact-left">
                     <h3>Sent your request</h3>
-                    <form>
+                    <form action="contact-form" method="post" id="form-list">
                         <div class="input-row">
                             <div class="input-group">
-                                <label>Name
+                                <label for="fullname">Full name
                                     <span class="require">*</span>
                                 </label>
-                                <input type="text" placeholder="Your Name" required>
+                                <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required>
                             </div>
                             <div class="input-group">
-                                <label>Phone
+                                <label for="phone">Phone
                                     <span class="require">*</span>
                                 </label>
-                                <input type="tel" placeholder="+84 123 456 789" required minlength="10" maxlength="12">
+                                <input type="tel" id="phone" name="phone" placeholder="+84 123 456 789" required
+                                    minlength="10" maxlength="12">
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group">
-                                <label>Email
+                                <label for="email">Email
                                     <span class="require">*</span>
                                 </label>
-                                <input type="email" placeholder="Your@email.com" required>
+                                <input type="email" id="email" name="email" placeholder="Your@email.com" required>
                             </div>
                             <div class="input-group">
                                 <label for="subject">Subject
                                     <span class="require">*</span>
                                 </label>
-                                <select name="subject" id="subject" required>
+                                <select id="subject" name="subjectist" form="subjectform" required>
                                     <option value="">--Please choose an option--</option>
-                                    <option value="">Order status</option>
-                                    <option value="">Feedback</option>
-                                    <option value="">Book request</option>
-                                    <option value="">Report a bug</option>
-                                    <option value="">Other</option>
+                                    <option value="Order status">Order status</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Book request">Book request</option>
+                                    <option value="Report a bug">Report a bug</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                         </div>
-                        <label>Message
+                        <label for="message">Message
                             <span class="require">*</span>
                         </label>
-                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
                         <button type="submit">SEND</button>
                     </form>
                 </div>
@@ -132,9 +133,9 @@
                     allowfullscreen></iframe>
             </div>
             <div class="newsletter-box">
-                <form>
+                <form action="newsletter" method="post" id="newsletter_sub">
                     <label for="email">Subscribe to our newsletter:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
